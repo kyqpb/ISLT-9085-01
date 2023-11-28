@@ -9,36 +9,60 @@
 		h1 { 
             padding-right: 20px;
 		    font-style: italic;
-            text-align: right;
+            text-align: center;
 			color: #00205c;
 			}
-			div.right {
-			text-align: right;
+			div.center {
+			text-align: center;
 			padding-right: 10px;
 			}
-			h2 {
-			text-align: center;
-			background-color: #00a1e0;
-			color: #00205c;
-		}
 			h3 {
 			color: #004b98;
 			}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the list items */
+.nav li {
+  float: left;
+}
+
+/* Style the navigation links */
+.nav li a {
+  display: block;
+  color: white; /* Text color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change link color on hover */
+.nav li a:hover {
+  background-color: #ddd; /* Light grey background on hover */
+  color: black; /* Black text on hover */
+}
+
+/* Responsive layout - makes the navigation links stack vertically on small screens */
+@media screen and (max-width: 600px) {
+  .nav li {
+    float: none;
+    width: 100%;
+  }
+}
+
 	</style>
 </head>
 <body>
 <div id="container">
 <header>
-		<h1>Kirsten Yates's Business Website</h1>
+		<h1>DIY for ID10Ts</h1>
 		<div class="right">
-		<h3>
-			<em>(417) 882-7788  </em>
-		</h3>
-		</div>
-		<div class="right">
-		<h3>
-			<em>308 E Republic Rd. Springfield, MO  </em>
-		</h3>
 		</div>
 </header>
 
