@@ -10,6 +10,9 @@ body {
 
 #container {
 	background-image: url("aifinalpt1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	margin: 0 auto;
         width: 1000px;
 	}
