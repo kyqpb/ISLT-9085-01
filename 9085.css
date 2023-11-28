@@ -9,6 +9,7 @@ body {
 }
 
 #container {
+	background-image: url("en.wikipedia.org/wiki/Cookie#/media/File:2ChocolateChipCookies.jpg");
 	margin: 0 auto;
         width: 1000px;
 	}
