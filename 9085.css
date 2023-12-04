@@ -246,29 +246,26 @@ section {
 ul li {
     font-size: 18px; /* Change to your preferred font size */
 }
-/* Normal link color */
-ul li {
+.custom-links ul li a {
+
     color: blue;
     font-size: 16px; /* Change the font size as needed */
 }
 
 /* Hover state */
-ul li:hover {
+.custom-links li a:hover {
     color: green;
 }
 
 /* Active state */
-ul li:active {
+.custom-links ul li a:active {
     color: red;
 }
 
 /* Visited links */
-ul li a:visited {
-    color: whitesmoke;
+.custom-links ul li a:visited {
+    color: purple;
 }
-
-
-
 
 footer {
 			text-align: center;
