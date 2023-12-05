@@ -18,59 +18,52 @@ html 	{
 			src: url('confidel.otf');
 			}
 header {
-			height: 50px; font-size: 1.2em;
+			position: fixed; /* Fixes the header at a specific position */
+    top: 0; /* Aligns the header to the top of the page */
+    left: 0; /* Aligns the header to the left of the page */
+    width: 100%; /* Ensures the header stretches across the full width */
+    height: 90px; 
+
 			text-indent: 0%;
 			background-color: rgba(245, 245, 245, 0.3);
 
-			padding: 5px; 
+	 
 
 		}
+	h1 { 
+    text-align: right; /* Aligns the text to the right */
+    font-style: unset;
+    color: #00a1e0;
+  margin-right: 20px;
+    font-family: 'superstarm54';
+  margin-top: 0px;
 
-h1 { 
-        	position: relative;
-			left: 150px;
-			font-style: unset;
-			color: #00a1e0;
-			height: 100px;
-			font-family: 'confidel';
-	}
+  font-size: 49px;
+font-weight: 100;
+}
+h1 span {font-size: 20px;
+font-style: italic;
+display: block;}
 
-h3 {
-			color: #FFFFFF;
-			font-family: 'confidel';
-			font-size: 50px;
-	}
-
-body {	
-	color: whitesmoke;
-	font-family: sans-serif;
-	font-size: 13px;
-	display: unset;
-	margin: 0;
-	}
-
-#container {
-
-			width: 100%;
-			margin: 0 auto;
-		}
 
 .nav 
 	{
+		font-size: 1.2em;
 		text-align: left;
 		clear: both;
    		 list-style: none;
-   		 margin: 0;
+   		 margin-bottom: auto;
    		 padding: 0;
 		font-family: 'superstarm54';
 		width: fit-content;
 	 	display: flex;
   		justify-content: space-between;
   		align-items: center;
-  		 position: fixed; /* Fixes the navigation at a specific position */
-    top: 0; /* Aligns the navigation to the top of the page */
+  		 position: absolute; /* Fixes the navigation at a specific position */
+    bottom: 0; /* Aligns the navigation to the top of the page */
     left: 0; /* Aligns the navigation to the left of the page */
 	}
+
 
 .left {
     float: left;
@@ -146,6 +139,37 @@ body {
   padding-left:  10px; /* 3 */
 }
 
+
+h3 {
+			color: #FFFFFF;
+			font-family: 'confidel';
+			font-size: 50px;
+}
+h3 span {font-style: italic;
+
+	}
+
+body {	
+
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 13px;
+    display: unset;
+    margin: 0;
+	}
+.main-content { /* Replace .main-content with the actual class or id of your main content container */
+    padding-top: 100px; /* Slightly more than the header's height to ensure no overlap */
+}
+p {font-size: 18px;}
+
+#container {
+
+			width: 100%;
+			margin: 0 auto;
+			height: 50px;
+		}
+
+
 section {
   	  	text-align: center;
 		clear: both;
@@ -164,9 +188,19 @@ section {
 		background-color: rgba(245, 245, 245, 0.3);
   			color: black;
   		margin-bottom: 10px; 
+	font-family: 'superstarm54';
+
 	
 	}
+.white {
+	font-size: 30px;
+	
+
+
+
+}
 .white.box:hover {
+   font-size: 30px;
     background-color: rgba(245, 245, 245, 0.5); /* Slightly changes color on hover */
     cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
 }
@@ -203,15 +237,6 @@ section {
   			background-color: rgba(245, 245, 245, 0.3);
   			color: black;
 		}
-.rside {
-		float: left;
-		width: 40%;
-		height: auto;
-		padding: 10px 0px;
-		text-align: justify;
-		box-sizing: border-box;
-
-		}
 
 .lside {
 		float: left;
@@ -220,14 +245,15 @@ section {
 		padding: 10px 0px;
 		text-align: left;
 		box-sizing: border-box;
-        }
-.new-rside {
-		float: right;
-		width: 45%;
+	}
+.rside {
+		float: left;
+		width: 50%;
 		height: auto;
 		padding: 10px 0px;
 		text-align: justify;
-		
+		box-sizing: border-box;
+
 		}
 
 .new-lside {
@@ -235,8 +261,23 @@ section {
 		width: 40%;
 		height: auto;
 		padding: 10px 0px;
-		
+
 		}
+
+        
+.new-rside {
+		float: right;
+		width: 45%;
+		height: auto;
+		padding: 10px 0px;
+
+
+		margin-top: 75px;
+		
+
+		}
+
+
 .box-container 
 		{
   		display: flex;
@@ -272,4 +313,6 @@ footer {
 			height: auto;
 			width: 100%;
 			display: inline-block;
+			font-size: 10px;
+			margin-top: 100px;
 		}
