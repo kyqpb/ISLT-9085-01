@@ -12,28 +12,31 @@ html 	{
 @font-face {
 			font-family: 'superstarm54';
 			src: url('superstarm54.ttf');
+
 			}
 @font-face {
 			font-family: 'confidel'; 
 			src: url('confidel.otf');
 			}
+@font-face {font-family: 'verdana';}
 header {
 			position: fixed; /* Fixes the header at a specific position */
     top: 0; /* Aligns the header to the top of the page */
     left: 0; /* Aligns the header to the left of the page */
     width: 100%; /* Ensures the header stretches across the full width */
     height: 90px; 
-
+z-index: 1000;
 			text-indent: 0%;
 			background-color: rgba(245, 245, 245, 0.3);
 
-	 
 
-		}
+
+}
+
 	h1 { 
     text-align: right; /* Aligns the text to the right */
     font-style: unset;
-    color: #00a1e0;
+    color: #56dee8;
   margin-right: 20px;
     font-family: 'superstarm54';
   margin-top: 0px;
@@ -48,55 +51,48 @@ display: block;}
 
 .nav 
 	{
-		font-size: 1.2em;
-		text-align: left;
-		clear: both;
+		
+		
+
    		 list-style: none;
    		 margin-bottom: auto;
    		 padding: 0;
 		font-family: 'superstarm54';
-		width: fit-content;
+	
 	 	display: flex;
-  		justify-content: space-between;
-  		align-items: center;
+  		
+  		
   		 position: absolute; /* Fixes the navigation at a specific position */
     bottom: 0; /* Aligns the navigation to the top of the page */
     left: 0; /* Aligns the navigation to the left of the page */
 	}
 
 
-.left {
-    float: left;
-}
 
-.right {
-    float: left;
-}
-.clear {
-    clear: both;
-    }
-.nav li{
-    	display:inline-block;
-	}
+
 .nav a {
 	display: inline-block;
-	padding: 8px 52px;
+	padding: 5px 79px;
 	text-decoration: none;
 	font-weight: bold;
-	color: #004b98; 
+	font-weight: 100; 
+	font-family: 'superstarm54';
+	list-style-type: none
 	}
 .nav a:link,
 .nav a:visited,
-.nav a:active {color: whitesmoke;}
+.nav a:active {color: #29178f;}
 .nav a:focus,     
 .nav a:hover {
-        color: white;
-        background-color: #034569;
+        color: whitesmoke;
+        background-color: #1560BD;
         }
 /* Style to position the dropdown content */
 .nav .dropdown {
-    position: relative;
+   position: relative;
     display: inline-block;
+
+
 }
 
 /* Hide the dropdown content */
@@ -104,18 +100,18 @@ display: block;}
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    min-width: 215px;
+   
 }
 
 /* Style the dropdown links */
 .nav .dropdown-content a {
-    color: black;
+    color: #56dee8;
     padding: 5px 0px;
     text-decoration: none;
     display: inline-block;
     text-align: left;
+
 }
 
 /* Change color of dropdown links on hover */
@@ -144,24 +140,54 @@ h3 {
 			color: #FFFFFF;
 			font-family: 'confidel';
 			font-size: 50px;
+			font-weight: 100;
 }
 h3 span {font-style: italic;
+	font-weight: 100;
 
 	}
+h4 {
+	color: black;
+	font-size: 25px;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'superstarm54';
+	font-weight: 100;
+}
 
 body {	
 
     color: whitesmoke;
-    font-family: sans-serif;
     font-size: 13px;
     display: unset;
     margin: 0;
 	}
 .main-content { /* Replace .main-content with the actual class or id of your main content container */
-    padding-top: 100px; /* Slightly more than the header's height to ensure no overlap */
-}
-p {font-size: 18px;}
 
+    margin-left: 120px;
+    margin-right: 150px;
+    padding-top: 120px;
+    }
+p {font-size: 19px;
+font-family: 'helvetica';
+font-weight: 100;
+line-height: 1.5
+
+}
+p2 {font-size: 14px;
+	font-family: 'helvetica';
+	font-style: italic;
+	font-weight: 100;
+line-height: 1.5
+}
+section {
+  	  	text-align: left;
+		clear: both;
+    	padding: 0px; 
+		width: 100%;
+		margin: auto;
+		height: auto;
+	}
 #container {
 
 			width: 100%;
@@ -170,72 +196,70 @@ p {font-size: 18px;}
 		}
 
 
-section {
-  	  	text-align: center;
-		clear: both;
-    	padding: 20px; 
-		width: 90%;
-		margin: auto;
-		height: auto;
-	}
+.white-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Adjusts spacing between boxes */
+    align-items: flex-start; /* Aligns boxes at the start of the container */
+}
 .box{
-		width: 300px;
-		height: 75px;
+		width: 275px;
+		height: 50px;
 		border: 4px solid black;
-		padding: 10px;
-		border: 5px solid #000033;
+		padding: 0px;
+		margin:0px auto
 		border-radius: 15px;
 		background-color: rgba(245, 245, 245, 0.3);
-  			color: black;
-  		margin-bottom: 10px; 
 	font-family: 'superstarm54';
 
-	
 	}
-.white {
-	font-size: 30px;
+.box-text-container {
+    display: flex; /* Aligns items in a row */
+    align-items: center; /* Centers items vertically */
+    margin-bottom: 20px; /* Adds some space below each container */
+}
+
+.box-text {
+    margin-left: 20px; /* Space between the box and the text */
+    flex: 1; /* Allows the text to take up the remaining space */
+}
+.white.box {
 	
-
-
+	padding: 10px;
+	margin: 10px;
+	flex-basis: calc(35% - 20px); /* Adjust width, considering margin */
+    margin: 10px; /* Space around each box */
 
 }
+
+.white.box h4 
+{
+    font-size: 40px;
+    color: #56dee8;
+}
+
 .white.box:hover {
-   font-size: 30px;
+  
     background-color: rgba(245, 245, 245, 0.5); /* Slightly changes color on hover */
     cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
-}
-.white:nth-child(n+2) 
-		{
-  			margin-left: 50px; 
-  			
-		}		
-.white:nth-child(n+3) 
-		{
-  			margin-left: 100px; 
-  			
-		}
-.white:nth-child(n+4) 
-		{
-  			margin-left: 150px; 
-  	
-		}
+    color: #1560BD;
 
-.white:nth-child(n+5) 
-		{
-  			margin-left: 200px; 
-  			
-		}
+}
+
 
 .blue {
-			width: 280px;
-			height: 700px;
+			width: 248px;
+			height: 500px;
 			display: flex;
 			flex-direction: column;
   			justify-content: flex-start;
-		  	align-items: flex-end;
-  			margin: 10px;
+		  font-size: 14px;
+		  font-family: 'confidel';
+  			margin: 20px;
   			background-color: rgba(245, 245, 245, 0.3);
-  			color: black;
+  			color: #29178f;
+  			padding: 7px;
+
 		}
 
 .lside {
@@ -248,31 +272,32 @@ section {
 	}
 .rside {
 		float: left;
-		width: 50%;
+		width: 60%;
 		height: auto;
 		padding: 10px 0px;
 		text-align: justify;
 		box-sizing: border-box;
+		font-weight: 100;
 
 		}
 
 .new-lside {
 		float: left;
-		width: 40%;
+		width: 60%;
 		height: auto;
-		padding: 10px 0px;
-
+		
+font-weight: 100;
 		}
 
         
 .new-rside {
 		float: right;
-		width: 45%;
+		width: 40%;
 		height: auto;
-		padding: 10px 0px;
+		
+font-weight: 100;
 
-
-		margin-top: 75px;
+	
 		
 
 		}
@@ -281,32 +306,40 @@ section {
 .box-container 
 		{
   		display: flex;
-  		justify-content: center; /* Centers boxes horizontally */
-  		flex-wrap: wrap; /* Allows boxes to wrap to next line if needed */
+  		
+  		flex-wrap: wrap;
+  		margin: 0px auto; /* Allows boxes to wrap to next line if needed */
+  		padding: 0px;
+  		text-align: left;
 		}
+ul {
+padding: 6px;
+list-style-type: none}
 ul li {
-    font-size: 18px; /* Change to your preferred font size */
-}
-.custom-links ul li a {
+    font-size: 18px; 
+    color: whitesmoke;
+    /* Change to your preferred font size */
+    font-family: helvetica;
+   margin-top: 10px;
+   text-align: left;
 
-    color: blue;
-    font-size: 16px; /* Change the font size as needed */
+}
+li a {
+
+    color: #7DC8F7;
+ 
 }
 
 /* Hover state */
-.custom-links li a:hover {
-    color: green;
+li a:hover {
+    color: #29178f;
 }
-
 /* Active state */
-.custom-links ul li a:active {
-    color: red;
+ul li a:active {
+    color: whitesmoke;
 }
 
-/* Visited links */
-.custom-links ul li a:visited {
-    color: purple;
-}
+
 
 footer {
 			text-align: center;
